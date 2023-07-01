@@ -1,0 +1,529 @@
+:root{
+    --head-font:'Montserrat';
+    --content-font: 'Poppins';
+    --main-font: #1c1c1c;
+    --header-font:#343434;
+    --card-bg:#5b5b5b;
+
+}
+html{
+    scroll-padding-top: 44px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--header-font);
+}
+p,li,a{
+    font-family: var(--content-font); 
+}
+/* /////////////////////////////////////////////// */
+nav{
+    padding: 0 !important;
+}
+
+.navbar .icon-nav{
+    padding: 0 !important;
+    margin: 4px 12px !important;
+    border: 0;
+    cursor: pointer;
+}
+.navbar-nav .nav-link{
+    padding: 0 0 !important;
+    margin-right: 48px;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+    color: #000 !important;
+}
+.navbar-nav{
+    color: #000 !important;
+
+}
+.navbar-nav .nav-link::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+}
+.navbar-nav .nav-link.active::after{
+  width:100%;
+}
+
+@media screen and (max-width:992px) {
+    .navbar .nav-link  {
+        font-weight: 400;
+       width: fit-content;
+        margin: 15px auto;
+}   
+    
+}
+
+
+/* ///////////////////////////Home///////////////////////////// */
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+.home-text{
+    padding-top: 61px;
+}
+.home-text h1{
+    font-size: 60px !important;
+}
+.home-text h2{
+    font-size: 60px !important;
+    font-weight: 100;
+}
+.home-text h2::after{
+    content: "";
+    animation: typing 8s infinite alternate linear ;
+    font-weight: 400;
+}
+@keyframes typing {
+    0%{content:"|"}
+    1%{content:"L|"}
+    2%{content:"La|"}
+    3%{content:"Lar|"}
+    4%{content:"Larr|"}
+    5%{content:"Larry|"}
+    6%{content:"Larry |"}
+    7%{content:"Larry D|"}
+    8%{content:"Larry Da|"}
+    9%{content:"Larry Dan|"}
+    10%{content:"Larry Dani|"}
+    11%{content:"Larry Danie|"}
+    12%{content:"Larry Daniel|"}
+    13%{content:"Larry Daniels|"}
+    20%{content:"Larry Daniel|"}
+    21%{content:"Larry Danie|"}
+    22%{content:"Larry Dani|"}
+    23%{content:"Larry Dan|"}
+    24%{content:"Larry Da|"}
+    25%{content:"Larry D|"}
+    26%{content:"Larry |"}
+    27%{content:"Larry|"}
+    28%{content:"Larr|"}
+    29%{content:"Lar|"}
+    30%{content:"La|"}
+    31%{content:"L|"}
+    32%{content:"|"}
+    39%{content:"D|"}
+    40%{content:"De|"}
+    40%{content:"Dev|"}
+    42%{content:"Deve|"}
+    43%{content:"Devel|"}
+    44%{content:"Develo|"}
+    45%{content:"Develop|"}
+    46%{content:"Develope|"}
+    47%{content:"Developer|"}
+    54%{content:"Develope|"}
+    55%{content:"Develop|"}
+    56%{content:"Develo|"}
+    57%{content:"Devel|"}
+    58%{content:"Deve|"}
+    59%{content:"Dev|"}
+    60%{content:"De|"}
+    61%{content:"D|"}
+    62%{content:"|"}
+    69%{content:"D|"}
+    70%{content:"De|"}
+    71%{content:"Des|"}
+    72%{content:"Desi|"}
+    73%{content:"Desig|"}
+    74%{content:"Design|"}
+    75%{content:"Designe|"}
+    76%{content:"Designer|"}
+    83%{content:"Designe|"}
+    84%{content:"Design|"}
+    885%{content:"Desig|"}
+    86%{content:"Desi|"}
+    87%{content:"Des|"}
+    88%{content:"De|"}
+    89%{content:"D|"}
+    100%{content:"|"}
+       
+    
+}
+.home-icon{
+     width: 200px;
+}
+.icon1{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* ///////////////About////////////// */
+#about h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--header-font);
+}
+#about h2::after{
+    content: ".";
+}
+.later-space{
+letter-spacing: 2px;
+}
+.font-sm{
+    font-size: 14px;
+}
+.progress-content p{
+    margin: 0 ;
+    
+}
+.progress{
+    height: 25px;
+}
+.bg-blackk{
+background-color: #000!important;
+}
+#about .btn1{
+    background-color: var(--main-font) !important;
+    color: #fff !important;
+    transition: 0.5s;
+}
+#about .btn1:hover{
+    background-color: #fff !important;
+    color: var(--main-font) !important;
+}
+#about .btn2{
+    background-color: #fff !important;
+    color: var(--main-font) !important;
+    transition: 0.5s;
+}
+#about .btn2:hover{
+    background-color: var(--main-font) !important;
+    color: #fff !important;
+}
+
+/* /////////survices////////////////// */
+#services{
+    background-color: #f7f7f7 !important;
+
+}
+.survices-sec h2{
+    color: var(--header-font) ;
+    font-size: 40px;
+}
+.survices-sec h2::after{
+    content: ".";
+    font-size: 40px;
+}
+.survices-card-icon{
+    width: 70px;
+    height: 70px;
+background-color: #f4f4f4;
+transition: 0.5s;
+}
+.survices-card:hover .survices-card-icon{
+background-color: var(--main-font);
+}
+.survices-card:hover .iconn-sur{
+    color: #fff;
+}
+/* ///////Protofolio ///////*/
+
+.work-sec h2{
+    font-size: 40px;
+    color: var(--header-font);
+}
+.work-sec h2::after{
+    content: ".";
+}
+.work-card{
+    position: relative;
+   
+}
+
+.work-card .work-card-layer{
+    position: absolute;
+    top: 17px;
+    left: 7px;
+    right: 7px;
+    bottom:7px;
+    background-color: #fdfdfd;
+    z-index: 555;
+    transition: all 0.2s;
+  opacity: 0;
+}
+.work-card:hover .work-card-layer{
+opacity: 1;
+transition: 0.5s;
+
+}
+.work-card .work-card-layer p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    transform: translateY(-15px);
+    transition: 0.2s;
+}
+.work-card .work-card-layer .work-layer-icon{
+    transform: translateY(15px);
+    transition: 0.2s;
+
+}
+.icon-layer{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.icon-layer .lay-ico{
+    font-size: 10px;
+    transition: 0.5s;
+}
+.icon-layer:hover{
+    background-color: #fff;
+}
+.icon-layer:hover .lay-ico{
+    color: var(--main-font) !important;
+}
+.work-card:hover .work-card-layer{
+    top: 7px;
+}
+.work-card:hover .work-card-layer p{
+    transform: translateY(0);
+
+}
+.work-card:hover .work-layer-icon{
+    transform: translateY(0);
+}
+
+
+.nav-pills .nav-link{
+    color: #222 ;   
+   margin: 8px 16px;
+   padding: 0;
+    font-weight: 700;
+    position: relative;
+}
+.nav-pills .nav-link::after{
+    content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #000;
+  transition: width 0.3s ease-in-out; 
+}
+.nav-pills .nav-link.active{
+    color: #222;
+    position: relative;
+    background-color: transparent;
+   
+}
+.nav-pills .nav-link.active::after{
+    width: 100%;
+
+}
+.fit-content{
+    width: fit-content;
+}
+/* testmonial//////////////////// */
+.testmonial{
+    background-color: #f7f7f7!important;
+    padding: 80px !important;
+}
+.testmonial h2{
+    font-size: 40px;
+    color: var(--header-font);
+    font-weight: 900;
+}
+.testmonial h2::after{
+    content: ".";
+}
+.carousel-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.max-width{
+    max-width: 700px;
+}
+.colr-head{
+    font-variant: var(--header-font) !important;
+ } 
+
+ .carousel-indicators [data-bs-target]{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #a3a3a3 !important;
+
+
+
+ }
+.carousel-indicators button.active,
+.carousel-indicators button:hover{
+  background-color: red !important;
+  background-color: #222 !important;
+
+}
+.font-sm-s{
+    font-size: 12px;
+}
+.votes h2{
+    font-weight: 900 !important;
+}
+
+/*//////////////////////// our team */
+.ourteam{
+    background-color:#f7f7f7 ;
+}
+.ourteam h2{
+    color: var(--header-font);
+    font-weight: 900;
+    font-size: 40px;
+}
+.ourteam h2::after{
+    content: ".";
+}
+.team-card{
+    background-color: #5b5b5b !important;
+    position: relative ;
+transition: 0.5s;
+overflow: hidden;
+}
+.team-card h4{
+   
+    font-size: 24px !important;
+    font-weight: 500 !important;
+}
+.team-layer{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    bottom: 107px;
+    right: 7px;
+    background-color: #f4f4f4e5 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.team-card:hover .team-layer{
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+.team-card:hover img{
+    transform: scale(1.1);
+}
+.team-image{
+    transition: 0.5s;
+    overflow: hidden;
+}
+.team-image img{
+    transition: 0.5s;
+}
+.team-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000; 
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.team-icon:hover{
+    background-color: #fff;
+}
+.team-icon:hover .team-iconne{
+    color: #000 !important;
+
+}
+.team-iconne{
+    transform: rotateY(180deg);
+}
+/* contact//////////////// */
+#contact h2{
+font-size: 40px;
+color: var(--header-font);
+font-weight: 900;
+
+}
+#contact h2::after{
+content: ".";
+}
+.parent-icon-contact{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact-icon{
+    font-size: 25px;
+    transition: 0.5s;
+}
+.contact-item:hover .parent-icon-contact{
+background-color: var(--main-font);
+}
+.contact-item:hover .contact-icon{
+color: #f4f4f4 !important;
+}
+
+#contact .form-control{
+    background-color: #f4f4f4;
+}
+#contact .form-control:focus{
+    border: transparent;
+    box-shadow: none;
+}
+#contact input{
+    height: 40px !important;
+}
+#contact textarea{
+    max-height: 300px;
+    min-height: 150px;
+}
+
+#contact form button{
+    background-color: var(--main-font);
+    color: #eee;
+    transition: 0.5s;
+}
+#contact form button:hover{
+    background-color: #eee;
+    color: var(--main-font) !important;
+}
+/* //////footer/////////////// */
+
+.footer{
+    background-color: var(--main-font);
+    color: #748182 !important;
+  font-size: 13PX;
+
+  
+}
+.footer P{
+    word-spacing: 2px;
+    font-weight: 400;
+    margin: 0;
+    padding: 38px 0;
+}
