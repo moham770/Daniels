@@ -508,47 +508,53 @@ transition: 0.5s;
     left: 0;
     z-index: -55;
 }
+
+
 .ourteam h2::after{
     content: ".";
 }
-.team-card{
+.team-text{
     background-color: #5b5b5b !important;
-    position: relative ;
-transition: 0.5s;
-overflow: hidden;
+    border-radius: 0 0 5px 5px;
+   
 }
 .team-card h4{
-   
     font-size: 24px !important;
     font-weight: 500 !important;
 }
-.team-layer{
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    bottom: 107px;
-    right: 7px;
-    background-color: #f4f4f4e5 !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: 0.5s;
-}
-.team-card:hover .team-layer{
-    opacity: 1;
-    transform: rotateY(180deg);
-}
-.team-card:hover img{
-    transform: scale(1.1);
-}
+
 .team-image{
-    transition: 0.5s;
+    position: relative;
     overflow: hidden;
 }
 .team-image img{
     transition: 0.5s;
 }
+.team-layer{
+    background-color: #f4f4f4e5 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 7px;
+    right: 7px;
+    top: 7px;
+    bottom: 7px;
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+.team-card:hover .team-layer{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+.team-image:hover img{
+    transform: scale(1.1);
+}
+.team-groub-icon{
+    transform: rotateY(180deg);
+}
+
 .team-icon{
     width: 40px;
     height: 40px;
